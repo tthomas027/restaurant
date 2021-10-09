@@ -27,4 +27,19 @@ const clearContent = () => {
   }
 }
 
+home.addEventListener('click', () => {
+  clearContent();
+  loadHome();
+});
+
+menu.addEventListener('click', () => {
+  clearContent();
+  loadMenu();
+});
+
+contact.addEventListener('click', () => {
+  clearContent();
+  loadContact();
+});
+
 loadHome();
