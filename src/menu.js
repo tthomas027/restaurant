@@ -1,5 +1,13 @@
+import Icon from './icon.jpg';
+
 const loadMenu = () => {
   const content = document.querySelector('#content');
+
+  const myIcon = new Image();
+  myIcon.src = Icon;
+  myIcon.alt = 'A grilled cheese sandwich on a cutting board';
+
+  content.appendChild(myIcon);
   
   const header = document.createElement('h1');
   header.textContent = 'Menu';
